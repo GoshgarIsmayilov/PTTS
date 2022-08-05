@@ -19,6 +19,13 @@ In the directory of server.js file, execute ```node server.js``` in order to run
 
 Execute ```http://localhost:3300/``` on the browser where Metamask prompts you to connect on your Ethereum account.
 
+Steps to make a private transaction:
+1. Deploy a new token with a token symbol and token name.
+2. Sender gets consent from receiver by providing token address and recevier address.
+3. Receiver gives consent to sender by providing token address and sender address.
+4. Sender deposits tokens to the smart contract by providing token address, receiver address, amount to send, current balance and secure number (secure number is initially 0). It takes nearly 2-3 minutes to generate zero-knowledge proof.
+5. Receiver withdraws tokens from the smart contract by providing token address, sender address, private key (private key is used only inside browser and not transmitted over the network), current balance and secure number (secure number is initially 0). It takes nearly 2-3 minutes to generate zero-knowledge proof.
+
 # For Balance Range Disclosure Attack
 
 The users and the transactions between these users are randomly generated with respect to the number of users and the number of transactions parameters, 
