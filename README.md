@@ -23,8 +23,8 @@ Steps to make a private transaction:
 1. Deploy a new token with a token symbol and token name.
 2. Sender gets consent from receiver by providing token address and recevier address.
 3. Receiver gives consent to sender by providing token address and sender address.
-4. Sender deposits tokens to the smart contract by providing token address, receiver address, amount to send, current balance and secure number (secure number is initially 0). It takes nearly 2-3 minutes to generate zero-knowledge proof.
-5. Receiver withdraws tokens from the smart contract by providing token address, sender address, private key (private key is used only inside browser and not transmitted over the network), current balance and secure number (secure number is initially 0). It takes nearly 2-3 minutes to generate zero-knowledge proof.
+4. Sender deposits tokens to the smart contract by providing token address, receiver address, amount to send, current balance and secure number (secure number is initially 0). It takes nearly 2-3 minutes to generate zero-knowledge proof. The balance and the secure number of sender must be recorded in order to involve with private transactions later again.
+5. Receiver withdraws tokens from the smart contract by providing token address, sender address, private key (private key is used only inside browser and not transmitted over the network), current balance and secure number (secure number is initially 0). It takes nearly 2-3 minutes to generate zero-knowledge proof. The balance and the secure number of receiver must be recorded in order to involve with private transactions later again.
 
 # For Balance Range Disclosure Attack
 
