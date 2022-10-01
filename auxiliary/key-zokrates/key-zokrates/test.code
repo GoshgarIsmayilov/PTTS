@@ -1,0 +1,4 @@
+// Example from https://zokrates.github.io/gettingstarted.html
+
+def main(private field a, field b) -> bool:
+	return a * a == b

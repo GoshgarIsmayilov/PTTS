@@ -1,0 +1,49 @@
+{
+  "inputs": [
+    {
+      "name": "value",
+      "public": false,
+      "type": "field"
+    },
+    {
+      "name": "before",
+      "public": false,
+      "type": "field"
+    },
+    {
+      "name": "valueBlind",
+      "public": false,
+      "type": "field"
+    },
+    {
+      "name": "beforeBlind",
+      "public": false,
+      "type": "field"
+    },
+    {
+      "name": "afterBlind",
+      "public": false,
+      "type": "field"
+    },
+    {
+      "name": "valueHash",
+      "public": true,
+      "type": "field"
+    },
+    {
+      "name": "beforeHash",
+      "public": true,
+      "type": "field"
+    },
+    {
+      "name": "afterHash",
+      "public": true,
+      "type": "field"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "field"
+    }
+  ]
+}
