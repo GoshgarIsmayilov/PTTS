@@ -102,3 +102,30 @@ https://ethereum.stackexchange.com/questions/78815/ethers-js-recover-public-key-
 https://github.com/ethers-io/ethers.js/issues/447
 
 https://stackoverflow.com/questions/68707553/uncaught-referenceerror-buffer-is-not-defined
+
+
+TRANSACTION DETAILS:
+FOR RINKEBY:
+
+https://rinkeby.etherscan.io/tx/0x1ca09fefb6893ac9dff5e8157f14ca39558dd5ea1423f09cbe6421d62886ddd6
+
+https://rinkeby.etherscan.io/tx/0x3f5766fd4c5e242fd4f322152a9dea1a93cb3fbc987d7c5da12e2058387b3940
+
+https://rinkeby.etherscan.io/tx/0x6c9d668bd3dcb19f308f6ad3cf207941da3d69fddbd3220654cbd91b9d237bb7
+
+https://rinkeby.etherscan.io/tx/0x6b8c6d79c772c19a04211ee8ee2310ffd55abf7c4440ff9a4dc3decd8f3d0116
+
+https://rinkeby.etherscan.io/tx/0x3f9f10b8fba844dcc6ab81748fe57fd8d1210b16ced9634e87f60425e3865de7
+
+
+FOR AVAX:
+
+https://testnet.snowtrace.io/tx/0x67befec299ef77a1848d698eb7ebd37efc2e4875f1318a439c6773c95867d12a
+
+https://testnet.snowtrace.io/tx/0x0e20a88face15370f98f8e7e1d9ed4f9fc158e4d81f80d004a43dba73a9fb790
+
+https://testnet.snowtrace.io/tx/0x8286b079e18a82cc116f86408d9cd0053d798edcc2913ebc2f7268f6a43a6daa
+
+https://testnet.snowtrace.io/tx/0xa9c0a9cc5de6bd4ce4383c2cfa3402b26da62f978c0e9605f42021f6158d75ba
+
+https://testnet.snowtrace.io/tx/0x1d330807c448dc59864f989ca9c87273a5d953541e7422b1e6697f7fd90fcdc3
