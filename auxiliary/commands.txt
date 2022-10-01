@@ -1,0 +1,104 @@
+ZOKRATES:
+
+export PATH=$PATH:$HOME/.zokrates/bin
+zokrates compile -i root.zok
+zokrates setup
+zokrates compute-witness -a 337 113569
+zokrates generate-proof
+zokrates export-verifier
+zokrates verify
+grep '~out' witness
+
+
+ZOKRATES HASH:
+
+0, 0: 89059515727727869117346995944635890507
+0, 1: 339056431533106736071583804247961371611
+0, 2: 299153063507599340301092178978927370390
+50, 0: 88795392107901394003693036759300599309
+50, 1: 314345071365266916590178100400599174302
+50, 2: 71855664378171453045415209069901904459
+100, 0: 63441782530704354556103942065333099277
+100, 1: 32082242981585653871585452183396170814
+100, 2: 288786978017336654864956842729690899056
+900, 0: 53402657981198600486251630240520303240
+900, 1: 6002085397695928275532121659065131670
+900, 2: 318668853761770087415404327517144042774
+950, 0: 274640773982596794647287725883761604086
+950, 1: 302236616924696233260263635878880248972
+950, 2: 136613518624762814765469962675919129745
+1000, 0: 160447523714545220416709952320130456769
+1000, 1: 144386102265781450781689986049647956728
+1000, 2: 209713911565540921804849122905806669129
+
+
+SHORTCUTS:
+
+zokrates compute-witness -a -value -before -valueBlind -beforeBlind -afterBlind -valueHash -beforeHash -afterHash
+
+SENDER:
+zokrates compute-witness -a 50 1000 1 0 0 314345071365266916590178100400599174302 160447523714545220416709952320130456769 274640773982596794647287725883761604086
+
+zokrates compute-witness -a 50 950 2 0 0 71855664378171453045415209069901904459 274640773982596794647287725883761604086 53402657981198600486251630240520303240
+
+zokrates compute-witness -a 50 900 2 0 0 71855664378171453045415209069901904459 53402657981198600486251630240520303240 25349411650510273277894863590647982882
+
+RECEIVER:
+zokrates compute-witness -a 50 0 1 0 1 314345071365266916590178100400599174302 89059515727727869117346995944635890507 314345071365266916590178100400599174302
+
+zokrates compute-witness -a 50 0 2 0 2 71855664378171453045415209069901904459 89059515727727869117346995944635890507 71855664378171453045415209069901904459
+
+
+JAVSCRIPT:
+
+browserify encrypt.js -o bencrypt.js
+node server.js
+webpack
+npm install eccrypto-js -g  --save-dev
+browserify eccrypto.js -o beccrypto.js
+browserify eth-utils.js -o beth-utils.js
+
+
+LINKS:
+
+https://cryptomarketpool.com/use-a-signature-to-generate-a-public-key/
+
+https://blog.decentriq.com/proving-hash-pre-image-zksnarks-zokrates/
+
+https://www.rapidtables.com/convert/number/hex-to-binary.html
+
+https://github.com/Zokrates/ZoKrates/issues/507
+
+https://www.liavaag.org/English/SHA-Generator/
+
+https://ethereum.stackexchange.com/questions/78040/is-there-a-way-to-view-the-private-key-of-test-account-in-remix-javascript-vm
+
+https://toolkit.abdk.consulting/ethereum#key-to-address,recover-address
+
+https://wizardforcel.gitbooks.io/practical-cryptography-for-developers-book/content/asymmetric-key-ciphers/ecies-example.html
+
+https://cryptomarketpool.com/how-to-sign-verify-an-ethereum-message-off-chain/
+
+https://media.consensys.net/introduction-to-zksnarks-with-examples-3283b554fc3b
+
+https://graphviz.org/Gallery/directed/fsm.html
+
+https://github.com/zhenpanda/ethsf_confer
+
+https://github.com/AwesomeHuang/Zokrates_Demo
+
+https://zokrates.github.io/gettingstarted.html
+
+https://developers.rsk.co/kb/first-frontend-web3-injected/
+
+https://www.zastrin.com/tutorials/build-an-ethereum-dapp-using-ethersjs
+
+https://webpack.js.org
+
+https://developpaper.com/question/after-webpack-is-packaged-functions-in-the-module-module-can-not-be-invoked-in-the-event-of-the-html-tag/
+
+https://ethereum.stackexchange.com/questions/78815/ethers-js-recover-public-key-from-contract-deployment-via-v-r-s-values
+
+https://github.com/ethers-io/ethers.js/issues/447
+
+https://stackoverflow.com/questions/68707553/uncaught-referenceerror-buffer-is-not-defined
