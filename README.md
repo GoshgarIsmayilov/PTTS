@@ -87,7 +87,6 @@ $$
 \end{align}
 $$
 
-\noindent
 where $Comm$ is the commitment function. The transaction amount to be deposited is shared after the encryption with the receiver public key $pk^r$. Later, the receiver performs the decryption with its own secret key $sk^r$:
 
 $$
@@ -97,7 +96,6 @@ $$
 \end{align}
 $$
 
-\noindent
 where $Enc$ and $Dec$ are the encryption and decryption functions.
 
 Later, both the sender and the receiver must generate their corresponding proofs $\pi^s$ and $\pi^r$ off-chain to show that their balances are updated accordingly:
@@ -111,7 +109,6 @@ $$
 \end{align}
 $$
 
-\noindent
 where $ZkpGen$ is the zero-knowledge proof generation function and $t$ is the time point. The proofs generated must be later verified on-chain with respect to the commitments stored in the contract:
 
 $$
@@ -121,7 +118,6 @@ b^r = ZkpVfy([& \pi^r, c^\beta_r, c^\Delta])
 \end{align}
 $$
 
-\noindent
 where $ZkpVfy$ is the zero-knowledge proof verification function; and $b^s$ and $b^r$ are the boolean outputs. The given theoretical representation above provides the security of the proposed protocol.
 
 ## Web User Interface
@@ -192,7 +188,6 @@ min. \sum_{(i, j) \in E} c_{ij} x_{ij} = +c_{UT} x_{UT}
 \end{equation}
 $$
 
-\noindent
 which are both subject to the following same constraints:
 
 $$
@@ -205,7 +200,6 @@ s.t. & \sum_{(i, j) \in E} x_{ij} - \sum_{(j, i) \in E} x_{ij} = b_i, \forall i 
 \end{align}
 $$
 
-\noindent
 Here, $b_{total}$ is the total token supply to the blockchain. The eqns. (1) and (2) are the objectives of the first and the second minimum cost flow network problems respectively while the eqn. (3) are the common constraints.
 
 # Publications to Read
